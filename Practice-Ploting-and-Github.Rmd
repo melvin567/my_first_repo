@@ -9,7 +9,9 @@ library(tidyverse)
 ```
 
 ``` {r}
-ggplot(iris, aes(x=Petal.Length))+geom_histogram(binwidth=0.35,color="black", fill = "purple",alpha=.3)+theme_dark()+labs(x="Petal Length (cm)",y="Count",tittle="Count Vs Petal Length (cm)") ->Iris_plot
+ggplot(iris, aes(x=Petal.Length))+geom_histogram(binwidth=0.35,color="black", fill = "yellow",alpha=.3)+theme_dark()+labs(x="Petal Length (cm)",y="Count",tittle="Count Vs Petal Length (cm)") ->Iris_plot
+
+Iris_plot
 
 ggsave("practice_plot.png", Iris_plot)
 
